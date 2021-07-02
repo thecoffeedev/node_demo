@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const DBURL = process.env.DATABASE_NAME;
 
